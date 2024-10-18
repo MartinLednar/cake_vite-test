@@ -1,0 +1,23 @@
+{
+  "name": "cake_vite-test",
+  "version": "1.0.0",
+  "description": "![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master) [![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app) [![PHPStan](https://img.shields.io/badge/PHPStan-level%207-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "sass": "^1.80.2",
+    "vite": "^5.4.9",
+    "vite-plugin-live-reload": "^3.0.3",
+    "vite-plugin-php": "^1.0.65",
+    "vue": "^3.5.12"
+  }
+}
