@@ -7,7 +7,8 @@ export default defineConfig({
     build: {
         outDir: "../webroot/js/", // Output directory for built files
         rollupOptions: {
-            input: "./index.html", // Specify the entry file for Vite
+            customButton: "./components/CustomButton.vue", // Add your components here
+            customLink: "./components/CustomLink.vue", // Specify the entry file for Vite
         },
     },
     root: "frontend", // Your frontend directory

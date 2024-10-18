@@ -6,6 +6,12 @@
 
 <script>
 export default {
-    name: "App",
+    name: "CustomButton",
 };
 </script>
+
+<style>
+h1 {
+    color: red;
+}
+</style>

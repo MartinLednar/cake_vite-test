@@ -89,10 +89,14 @@ $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallbac
 </head>
 <body>
     <main class="main">
-        <div id="app"></div> 
-        Skuska Ako
+        <div id="button"></div> 
+        <div id="link"></div> 
+
+        Skuska mu
     </main>
 
-    <script type="module" src="http://localhost:3000/main.js"></script>
+    <script type="module" src="http://localhost:3000/button.js"></script>
+    <script type="module" src="http://localhost:3000/link.js"></script>
+
 </body>
 </html>
