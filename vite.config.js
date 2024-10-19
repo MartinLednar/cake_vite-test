@@ -3,15 +3,26 @@ import vue from "@vitejs/plugin-vue";
 import liveReload from "vite-plugin-live-reload";
 
 export default defineConfig({
-    plugins: [vue(), liveReload("../**/*.php")],
+    plugins: [vue(), liveReload("./**/*.php")],
+    root: "./", // Your frontend directory
+    appType: "mpa",
     build: {
-        outDir: "../webroot/js/", // Output directory for built files
+        outDir: "webroot/", // Output directory for built files
         rollupOptions: {
-            customButton: "./components/CustomButton.vue", // Add your components here
-            customLink: "./components/CustomLink.vue", // Specify the entry file for Vite
+            input: {
+                customButton: "./frontend/components/button.vue",
+                customLink: "./frontend/components/link.vue",
+            },
         },
     },
-    root: "frontend", // Your frontend directory
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@import "/resources/css/global.scss";`,
+            },
+        },
+    },
+
     server: {
         port: 3000,
         proxy: {

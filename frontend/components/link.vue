@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href="#">Ja som link</a>
+        <a class="test" href="#">Ja som link</a>
     </div>
 </template>
 
@@ -10,8 +10,6 @@ export default {
 };
 </script>
 
-<style>
-a {
-    color: green;
-}
+<style lang="scss">
+@import "../../resources/css/test.scss";
 </style>

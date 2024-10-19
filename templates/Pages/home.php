@@ -95,8 +95,8 @@ $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallbac
         Skuska mu
     </main>
 
-    <script type="module" src="http://localhost:3000/button.js"></script>
-    <script type="module" src="http://localhost:3000/link.js"></script>
+    <script type="module" src="http://localhost:3000/frontend/button.js"></script>
+    <script type="module" src="http://localhost:3000/frontend/link.js"></script>
 
 </body>
 </html>
