@@ -1,0 +1,1 @@
+import{_ as o,c as e,a as n,o as s,b as r}from"./_plugin-vue_export-helper-CH51K9_r.js";const a={name:"CustomButton"};function u(l,t,m,p,_,f){return s(),e("div",null,t[0]||(t[0]=[n("h1",null,"Hello from Vue!",-1)]))}const c=o(a,[["render",u]]);r(c).mount("#button");

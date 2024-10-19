@@ -7,20 +7,17 @@ export default defineConfig({
     root: "./", // Your frontend directory
     appType: "mpa",
     build: {
-        outDir: "webroot/", // Output directory for built files
+        outDir: "webroot", // Output directory for built files
+        emptyOutDir: false,
         rollupOptions: {
             input: {
-                customButton: "./frontend/components/button.vue",
-                customLink: "./frontend/components/link.vue",
+                customButton: "frontend/button.js",
+                customLink: "frontend/link.js",
             },
         },
     },
     css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: `@import "/resources/css/global.scss";`,
-            },
-        },
+        preprocessorOptions: {},
     },
 
     server: {

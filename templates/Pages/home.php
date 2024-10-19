@@ -77,14 +77,13 @@ $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallbac
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'fonts', 'cake', 'home']) ?>
+
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 
 
-    
     <!-- <script type="module" src="http://localhost:5173/frontend/main.js"></script> -->
 </head>
 <body>

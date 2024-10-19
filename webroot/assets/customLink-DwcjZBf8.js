@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as n,o,b as a}from"./_plugin-vue_export-helper-CH51K9_r.js";const r={name:"CustomLink"};function c(m,e,p,l,u,_){return o(),t("div",null,e[0]||(e[0]=[n("a",{class:"test",href:"#"},"Ja som link",-1)]))}const i=s(r,[["render",c]]);a(i).mount("#link");
