@@ -4,7 +4,7 @@ import liveReload from "vite-plugin-live-reload";
 
 export default defineConfig({
     plugins: [vue(), liveReload("./**/*.php")],
-    root: "./", // Your frontend directory
+    root: "./",
     appType: "mpa",
     build: {
         outDir: "webroot", // Output directory for built files
@@ -17,7 +17,14 @@ export default defineConfig({
         },
     },
     css: {
-        preprocessorOptions: {},
+        preprocessorOptions: {
+            scss: {
+                api: "modern-compiler",
+                importers: [
+                    // ...
+                ],
+            },
+        },
     },
 
     server: {

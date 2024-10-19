@@ -1,14 +1,14 @@
-<template>
-    <div>
-        <h1>Hello from Vue!</h1>
-    </div>
-</template>
+<script setup>
+import { ref } from "vue";
 
-<script>
-export default {
-    name: "CustomButton",
-};
+const count = ref(0);
 </script>
+
+<template>
+    <button @click="count++">
+        <h1>Click me:{{ count }}</h1>
+    </button>
+</template>
 
 <style>
 h1 {
