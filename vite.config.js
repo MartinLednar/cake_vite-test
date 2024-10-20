@@ -7,6 +7,7 @@ export default defineConfig({
     root: "./",
     appType: "mpa",
     build: {
+        manifest: true,
         outDir: "webroot", // Output directory for built files
         emptyOutDir: false,
         rollupOptions: {

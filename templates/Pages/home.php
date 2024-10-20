@@ -64,7 +64,8 @@ $files = glob(WWW_ROOT . 'assets/index-*.js');
 $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallback
 
 
-
+$manifestPath = ROOT . '/webroot/.vite/manifest.json';
+$manifest = json_decode(file_get_contents($manifestPath), true);
 ?>
 <!DOCTYPE html>
 <html>
@@ -91,8 +92,9 @@ $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallbac
         Skuska muska
     </main>
 
-    <script type="module" src="http://localhost:3000/frontend/button.js"></script>
+    <script type="module" src="<?= $this->Url->build($manifest['frontend/button.js']['file']) ?>"></script>
     <script type="module" src="http://localhost:3000/frontend/link.js"></script>
+
 
 </body>
 </html>

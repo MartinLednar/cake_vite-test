@@ -1,0 +1,30 @@
+{
+  "_runtime-dom.esm-bundler-ZzoHWlIu.js": {
+    "file": "assets/runtime-dom.esm-bundler-ZzoHWlIu.js",
+    "name": "runtime-dom.esm-bundler"
+  },
+  "frontend/button.js": {
+    "file": "assets/customButton-4XTuDtTO.js",
+    "name": "customButton",
+    "src": "frontend/button.js",
+    "isEntry": true,
+    "imports": [
+      "_runtime-dom.esm-bundler-ZzoHWlIu.js"
+    ],
+    "css": [
+      "assets/customButton-CyiT_ioQ.css"
+    ]
+  },
+  "frontend/link.js": {
+    "file": "assets/customLink-D1U-KF1_.js",
+    "name": "customLink",
+    "src": "frontend/link.js",
+    "isEntry": true,
+    "imports": [
+      "_runtime-dom.esm-bundler-ZzoHWlIu.js"
+    ],
+    "css": [
+      "assets/customLink-9_EjJANv.css"
+    ]
+  }
+}
