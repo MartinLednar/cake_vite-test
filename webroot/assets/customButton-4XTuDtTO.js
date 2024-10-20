@@ -1,1 +1,0 @@
-import{r as n,c as o,a,t as r,o as s,b as c}from"./runtime-dom.esm-bundler-ZzoHWlIu.js";const u={__name:"button",setup(l){const t=n(0);return(p,e)=>(s(),o("button",{onClick:e[0]||(e[0]=m=>t.value++)},[a("h1",null,"Click me:"+r(t.value),1)]))}};c(u).mount("#button");

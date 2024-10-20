@@ -9,13 +9,15 @@ export default defineConfig({
     root: "./",
     appType: "mpa",
     build: {
+        // cssCodeSplit: false, MAKES BUNDLED CSS AS SINGLE FILE
         manifest: true,
         outDir: "webroot", // Output directory for built files
         emptyOutDir: false,
         rollupOptions: {
             input: {
-                customButton: "frontend/button.js",
-                customLink: "frontend/link.js",
+                globalCss: "resources/css/global.scss",
+                customButton: "resources/js/button.js",
+                customLink: "resources/js/link.js",
             },
         },
     },

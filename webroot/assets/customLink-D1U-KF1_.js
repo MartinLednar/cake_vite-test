@@ -1,1 +1,0 @@
-import{c as r,a,o as c,b as p}from"./runtime-dom.esm-bundler-ZzoHWlIu.js";const i=(e,t)=>{const o=e.__vccOpts||e;for(const[n,s]of t)o[n]=s;return o},l={name:"CustomLink"};function m(e,t,o,n,s,_){return c(),r("div",null,t[0]||(t[0]=[a("a",{class:"test",href:"#"},"Ja som link",-1)]))}const u=i(l,[["render",m]]);p(u).mount("#link");

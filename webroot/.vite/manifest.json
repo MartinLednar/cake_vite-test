@@ -1,27 +1,32 @@
 {
-  "_runtime-dom.esm-bundler-ZzoHWlIu.js": {
-    "file": "assets/runtime-dom.esm-bundler-ZzoHWlIu.js",
-    "name": "runtime-dom.esm-bundler"
+  "__plugin-vue_export-helper-DRVxjfqW.js": {
+    "file": "assets/_plugin-vue_export-helper-DRVxjfqW.js",
+    "name": "_plugin-vue_export-helper"
   },
-  "frontend/button.js": {
-    "file": "assets/customButton-4XTuDtTO.js",
+  "resources/css/global.scss": {
+    "file": "assets/globalCss-CDhElxgU.css",
+    "src": "resources/css/global.scss",
+    "isEntry": true
+  },
+  "resources/js/button.js": {
+    "file": "assets/customButton-CDHKUuPM.js",
     "name": "customButton",
-    "src": "frontend/button.js",
+    "src": "resources/js/button.js",
     "isEntry": true,
     "imports": [
-      "_runtime-dom.esm-bundler-ZzoHWlIu.js"
+      "__plugin-vue_export-helper-DRVxjfqW.js"
     ],
     "css": [
-      "assets/customButton-CyiT_ioQ.css"
+      "assets/customButton--oJHV7xj.css"
     ]
   },
-  "frontend/link.js": {
-    "file": "assets/customLink-D1U-KF1_.js",
+  "resources/js/link.js": {
+    "file": "assets/customLink-CQalgC4f.js",
     "name": "customLink",
-    "src": "frontend/link.js",
+    "src": "resources/js/link.js",
     "isEntry": true,
     "imports": [
-      "_runtime-dom.esm-bundler-ZzoHWlIu.js"
+      "__plugin-vue_export-helper-DRVxjfqW.js"
     ],
     "css": [
       "assets/customLink-9_EjJANv.css"

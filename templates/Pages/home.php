@@ -80,6 +80,13 @@ $isDev = true;
             <?= $this->fetch('title') ?>
         </title>
         <?= $this->Html->meta('icon') ?>
+
+        <?php if ($isDev){ ?>
+            <link rel="stylesheet" href="http://localhost:3000/resources/css/global.scss">
+    <?php } else{ ?>
+            <link rel="stylesheet" href="<?= $this->Url->build($manifest['resources/css/global.scss']['file']) ?>">
+    <?php } ?>
+
 </head>
 <body>
     <main class="main">
@@ -92,15 +99,12 @@ $isDev = true;
     </main>
 
     <?php if ($isDev){ ?>
-    <script type="module" src="http://localhost:3000/frontend/button.js"></script>
-    <script type="module" src="http://localhost:3000/frontend/link.js"></script>
+    <script type="module" src="http://localhost:3000/resources/js/button.js"></script>
+    <script type="module" src="http://localhost:3000/resources/js/link.js"></script>
     <?php } else{ ?>
-        <script type="module" src="<?= $this->Url->build($manifest['frontend/button.js']['file']) ?>"></script>
-        <script type="module" src="<?= $this->Url->build($manifest['frontend/link.js']['file']) ?>"></script>
+        <script type="module" src="<?= $this->Url->build($manifest['resources/js/button.js']['file']) ?>"></script>
+        <script type="module" src="<?= $this->Url->build($manifest['resources/js/link.js']['file']) ?>"></script>
     <?php } ?>
-
-
-
 
 </body>
 </html>
