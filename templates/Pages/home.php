@@ -80,9 +80,6 @@ $isDev = true;
             <?= $this->fetch('title') ?>
         </title>
         <?= $this->Html->meta('icon') ?>
-
-
-
 </head>
 <body>
     <main class="main">
