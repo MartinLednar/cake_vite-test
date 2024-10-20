@@ -5,13 +5,12 @@ const count = ref(0);
 </script>
 
 <template>
-    <button @click="count++">
-        <h1>Click me:{{ count }}</h1>
-    </button>
+    <button @click="count++">Click me:{{ count }}</button>
 </template>
 
-<style>
-h1 {
+<style scoped>
+button {
     color: red;
+    font-size: 25px;
 }
 </style>

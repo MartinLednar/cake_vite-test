@@ -86,7 +86,9 @@ $isDev = true;
         <div id="button"></div> 
         <div id="link"></div> 
 
-        Skuska muska
+       <h1>
+           Skuska muska
+       </h1>
     </main>
 
     <?php if ($isDev){ ?>
