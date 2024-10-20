@@ -68,7 +68,7 @@ $manifest = json_decode(file_get_contents($manifestPath), true);
 
 
 // Environment
-$isDev = false;
+$isDev = true;
 ?>
 <!DOCTYPE html>
 <html>
@@ -82,7 +82,6 @@ $isDev = false;
         <?= $this->Html->meta('icon') ?>
 
 
-    <link rel="stylesheet" href="http://localhost:3000/resources/css/global.css"></link>
 
 </head>
 <body>
