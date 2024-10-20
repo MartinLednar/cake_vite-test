@@ -1,3 +1,5 @@
+/** @type {import('vite').UserConfig} */
+
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import liveReload from "vite-plugin-live-reload";
@@ -35,6 +37,12 @@ export default defineConfig({
                 target: "http://localhost:8765", // Your CakePHP server
                 changeOrigin: true, // Adjust if necessary
             },
+        },
+    },
+
+    resolve: {
+        alias: {
+            "@styles": "./resources/css/",
         },
     },
 });

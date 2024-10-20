@@ -56,33 +56,34 @@ if (!Configure::read('debug')) :
     );
 endif;
 
-
 // Get all files in the assets directory
 $files = glob(WWW_ROOT . 'assets/index-*.js');
 
 // Assuming you want the latest generated file
 $mainJs = !empty($files) ? basename($files[0]) : 'fallback.js'; // Set a fallback
 
-
+// MANIFEST
 $manifestPath = ROOT . '/webroot/.vite/manifest.json';
 $manifest = json_decode(file_get_contents($manifestPath), true);
+
+
+// Environment
+$isDev = false;
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        CakePHP: the rapid development PHP framework:
-        <?= $this->fetch('title') ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
+    <head>
+        <?= $this->Html->charset() ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            CakePHP: the rapid development PHP framework:
+            <?= $this->fetch('title') ?>
+        </title>
+        <?= $this->Html->meta('icon') ?>
 
 
+    <link rel="stylesheet" href="http://localhost:3000/resources/css/global.css"></link>
 
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
 </head>
 <body>
     <main class="main">
@@ -92,8 +93,15 @@ $manifest = json_decode(file_get_contents($manifestPath), true);
         Skuska muska
     </main>
 
-    <script type="module" src="<?= $this->Url->build($manifest['frontend/button.js']['file']) ?>"></script>
+    <?php if ($isDev){ ?>
+    <script type="module" src="http://localhost:3000/frontend/button.js"></script>
     <script type="module" src="http://localhost:3000/frontend/link.js"></script>
+    <?php } else{ ?>
+        <script type="module" src="<?= $this->Url->build($manifest['frontend/button.js']['file']) ?>"></script>
+        <script type="module" src="<?= $this->Url->build($manifest['frontend/link.js']['file']) ?>"></script>
+    <?php } ?>
+
+
 
 
 </body>

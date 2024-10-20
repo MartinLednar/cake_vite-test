@@ -10,6 +10,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@use "../../resources/css/test.scss";
-</style>
+<style lang="scss" src="@styles/test.scss"></style>
