@@ -4,6 +4,8 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import liveReload from "vite-plugin-live-reload";
 
+import { getImportScssFiles } from "./scripts/getImportScssFiles";
+
 export default defineConfig({
     plugins: [vue(), liveReload("./**/*.php")],
     root: "./",
@@ -15,7 +17,7 @@ export default defineConfig({
         emptyOutDir: false,
         rollupOptions: {
             input: {
-                globalCss: "resources/css/global.scss",
+                ...getImportScssFiles("resources/css/"),
                 customButton: "resources/js/button.js",
                 customLink: "resources/js/link.js",
             },

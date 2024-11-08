@@ -19,9 +19,4 @@ function getImportScssFiles(dirPath) {
     return result;
 }
 
-// Run the function with the resources directory
-
-const importScssFiles = getImportScssFiles("resources/css/");
-
-// Log the resulting object to the console
-console.log(importScssFiles);
+export { getImportScssFiles };
